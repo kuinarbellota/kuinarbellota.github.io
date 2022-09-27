@@ -1,0 +1,17 @@
+body{
+background-color: #a4f8a4;
+}
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    background: url("img1.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:#a4f8a4;
+    background-color: #a4f8a4;
+    
+}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> una venta pop-up</title>
+    <!--Abrir una ventana pop-up cada cierto tiempo -->
+</head>
+<body>
+    <script>
+       function abrir_ventana()
+       {
+        window.open("http://www.cnice.mec.es/");
+       }
+       function parar_abrir()
+       {
+        clearTimeout(pop);
+       }
+       pop = setInterval ("abrir_ventana()",3000);
+    </script>
+</body>
+<input type=button value="parar de abrir ventanas" onclick="parar_abrir()">
+</html>

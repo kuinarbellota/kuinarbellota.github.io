@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>texto en mayuscula</title>
+</head>
+<body>
+<script>
+function makeLowercase() {
+document.forml.outstring.value = document.forml.instring.value.toLowerCase();}
+function makeUppercase() { 
+document.forml.outstring.value = document.forml.instring.value.toUperCase();}
+String.prototype.capitalize = function(){
+    return this.replace( /(^|\s) ({a-z})/g , function(m,p1,p2){return p1+p2.toUpperCase(); } );
+};
+function capWords() {
+    var inputString = document.forml.instring;
+    var outputString = document.forml.outstring;
+    outputString.value = inputString.value.capitalize();
+}
+</script>
+<h1>Convertir texto en mayusculas, minusculas y capitalizar</h1>
+<form name="form1" method="post">
+<input name="instring" type="text" value="CONVIERTELO" size="30">
+<input type="button" name="Convert" value="Minusculas" onclick="makeUppercase();">
+<input type="button" name="Convert" value="Mayusculas" onclick="makeUppercase();">
+<input type="button" name="Capitalize" value="Capitalizar" onclick="capWords();">
+<input name="outstring" type="text" value="" size="30">
+</form>
+</body>
+</html>

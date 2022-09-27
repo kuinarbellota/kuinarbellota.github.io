@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>proyecto</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script>
+		//Se declaran las variables
+        var caracteres;
+        var salida = "";
+        var letras = prompt("Introduce un texto, por favor:")
+        var numercaract = letras.length;
+
+        //Se crea un bucle for que lee los caracteres ingresados
+        for (i = 0; i < numercaract; i++) {
+            caracteres = letras.charAt(i);  //recupera el caracter i del string.
+            salida = caracteres + salida;
+        }
+        //Se devuelve el texto ingresado en reversa
+        document.write(salida);
+	</script>
+</body>
+</html>

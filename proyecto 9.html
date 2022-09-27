@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto 9</title>
+</head>
+<body>
+    <script>
+        function proyecto() {
+            var pregunta = confirm("Deseas visitar la pagina principal?")
+            if (pregunta){
+                alert("Te envio alli rapidamente")
+                window.location = "file:///C:/Users/kuina/Desktop/netflix/netflix.html";
+            }
+            else{
+                  alert("Quizas en otro momento...\n Gracias de todas formas")
+            }
+        }
+    </script>
+    <button type="button" onclick="proyecto()">probar confirm</button>
+</body>
+</html>

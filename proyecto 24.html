@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>proyecto</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script>
+        //Se imprime una línea horizontal
+        document.write("<hr>");
+
+		//Se declaran las variables
+        var i;
+
+        //Se crea un bucle for para que se impriman todos los números entre 1 y 500
+        for (i = 0; i < 501; i++) {
+            document.write(i);
+
+        //Si el número es múltiplo de 4, se escribe "(Múltiplo de 4)" a un lado. Si es de 9, se escribe "(Múltiplo de 9)"
+        if (i % 4 == 0) {
+            document.write(" (Multiplo de 4)");
+        } else if (i % 9 == 0) {
+            document.write(" (Multiplo de 9)");
+        }
+
+        //Se imprime un salto de línea
+        document.write("<br>");
+
+        //Si i es múltiplo de 5, se imprime una línea horizontal
+        if (i % 5 == 0) {
+            document.write("<hr>");
+        }
+        }
+	</script>
+</body>
+</html>
